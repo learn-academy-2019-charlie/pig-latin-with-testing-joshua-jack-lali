@@ -2,13 +2,47 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title></title>
+    <link  rel="stylesheet" href="bootstrap.min.css"/>
+    <link  rel="stylesheet" href="bootstrap.css"/>
+    <link  rel="stylesheet" href="custom.css"/>
+    <link  rel="alternate" href="hank.html"/>
   </head>
   <body>
-    <h1>My greeter page</h1>
-    <input type="text" id="user-input">
-    <button type="button" name="button" onclick="greeter()">Click me!</button>
-    <h3 id="output"></h3>
-    <script type="text/javascript" src="greeter.js"></script>
+     <div class="container">
+    <h2 class="text-primary">Oink Oink Piggy Friends!</h2>
+        <div class="form-group">
+            <label for="exampleTextarea"></label>
+            <textarea class="form-control" id="user-input" rows="7" placeholder="Type whatever you like"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" onClick="greeter()">Translate!</button>
+
+    <div class="form-group">
+        <label for="exampleOutput"></label>
+        <textarea class="form-control" id="output" rows="7"></textarea>
+    </div>
+    <div id="myTabContent" class="tab-content">
+  <div>
+    <p>For words beginning with a vowel, add "way" to the end.</p>
+  </div>
+  <div>
+    <p>For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".</p>
+  </div>
+  <div>
+    <p>If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!</p>
+  </div>
+  <div>
+    <p>For words beginning with "y", treat "y" as a consonant.</p>
+  </div>
+    <script type="text/javascript" src="piglatin.test.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./custom.js/hank_popper.js"></script>
+</div>
   </body>
 </html>

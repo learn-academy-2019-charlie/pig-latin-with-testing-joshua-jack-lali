@@ -8,11 +8,10 @@
 // nested if: catch for "qu" and move both to end, adding "ay"
 // note: treat words beginning with 'y' as consonant
 
-// function greeter(){
-//     let userName = document.getElementById("user-input").value
-//     document.getElementById("output").innerHTML
-// }
-var input = "test input"
+ function greeter(){
+     let input = document.getElementById("user-input").value
+     document.getElementById("output").innerHTML = pigLatin(input)
+ }
 var vowel = ["a","e","i","o","u"]
 var test = "Hello, there. My name is Joshua!"
 var reggie = /[.,\/#!$%\^&\*;:{}=\-_`~()]/g
@@ -25,8 +24,11 @@ const pigLatin = (str) => {
         if (loc === 0){
             return tempStr + "way"
         } else {
-            let cut = tempStr.slice(0,loc) + "ay"
-            return tempStr.substring(loc) + cut
+            if (tempStr === ""){}
+            else {
+                let cut = tempStr.slice(0,loc) + "ay"
+                return tempStr.substring(loc) + cut
+            }
         }
     })
     //var iterator1 = holder.values()
