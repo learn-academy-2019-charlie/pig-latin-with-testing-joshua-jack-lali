@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     var modal_triggered = false
-    alert("hi")
+    alert("HI")
     return $( window ).scroll(function() {
         var height = $(window).scrollTop();
         //alert("bla")

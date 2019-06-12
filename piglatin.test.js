@@ -1,6 +1,5 @@
 //incomplete
 
-
 // split input based on words, leaving out spaces, commas and numbers
 // for each word, find index of first available vowel
 // first if: catch for vowel at loc 0 and add "way" to end
@@ -62,17 +61,7 @@ const fusion = (map, arr) => {
     //console.log(map);
     return map.join(" ")
 }
-
-
 console.log(pigLatin(test))
-
-
-
-
-
-
-
-
 // const pigLatin = (str) => {
 //     let arr = str.split(" ")
 //     let loc = []
